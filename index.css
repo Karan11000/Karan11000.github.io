@@ -104,7 +104,7 @@ img{
     font-size: 1.4rem;
     font-weight: bold;
 }
-@media(max-width:296px){
+@media (max-width:296px){
     .icardtext{
         font-size: 0.8rem;
     }
