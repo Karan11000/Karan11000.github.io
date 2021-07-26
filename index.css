@@ -87,8 +87,9 @@ img{
 }
 .icard{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
+    flex-wrap: wrap;
+    align-items:center;
     margin: 4px;
     /* border: 2px solid red; */
     width: 300px;
@@ -97,7 +98,7 @@ img{
 }
 .icard-img>img{
     width: 240px;
-    height: 250px;
+    height:250px;
     border-radius: 25px;
 }
 .icardtext{
