@@ -26,6 +26,9 @@ img{
     margin: 0px 8px;
     margin-top: 20px;
 }
+#navFoodiz{
+    margin-top: 10px;
+}
 @media (max-width: 332px){
     .navbar{
 
@@ -60,4 +63,44 @@ img{
 }
 .about>p{
     color: black;
+    text-shadow: 2px 3px 15px #d70f64;
+}
+.introcard{
+    width: 100%;
+    position: absolute;
+    top: 800px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: rgb(230 230 230);
+    border-radius: 30px;
+    transition-property: all;
+    transition-duration: 4s;
+    transition-delay: 0.1s;
+}
+.introcard:hover{
+      background-color: #1a1717;
+      color: white;
+}
+.icard{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 4px;
+    /* border: 2px solid red; */
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+.icard-img>img{
+    width: 240px;
+    height: 250px;
+    border-radius: 25px;
+}
+.icardtext{
+    font-size: 1.4rem;
+    font-weight: bold;
 }
