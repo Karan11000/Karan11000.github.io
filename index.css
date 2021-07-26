@@ -46,6 +46,8 @@ img{
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
+    height: 700px;
+    border: 2px solid green;
 }
 .basic-intro{
     font-size: 2rem;
@@ -58,7 +60,7 @@ img{
 }
 .about{
     position: absolute;
-    top: 600px;
+    top: 500px;
     color:  #d70f64;
 }
 .about>p{
@@ -68,8 +70,6 @@ img{
 }
 .introcard{
     width: 100%;
-    position: absolute;
-    top: 800px;
     display: flex;
     /* flex-direction: column; */
     justify-content: center;
@@ -81,6 +81,7 @@ img{
     transition-property: all;
     transition-duration: 4s;
     transition-delay: 0.1s;
+    box-sizing: border-box;
 }
 .introcard:hover{
       background-color: #1a1717;
@@ -93,17 +94,20 @@ img{
     align-items:center;
     justify-content: center;
     margin: 0px 4px;
-    /* border: 2px solid red; */
-    width: 300px;
-    height: 300px;
+    border: 2px solid red;
+    /* width: 300px;
+    height: 300px; */
     text-align: center;
 }
 .icard-img>img{
     width: 240px;
     height:250px;
+    display: block;
+    margin: auto;
+    /* vertical-align: middle; */
     border-radius: 25px;
-    max-width: 100%;
-    max-height: 100%;
+    /* max-width: 100%;
+    max-height: 100%; */
     /* aspect-ratio: auto 240/250; */
 }
 .icardtext{
@@ -112,6 +116,6 @@ img{
 }
 @media (max-width:296px){
     .icardtext{
-        font-size: 0.8rem;
+        font-size: 20px;
     }
 }
