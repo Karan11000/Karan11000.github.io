@@ -63,7 +63,8 @@ img{
 }
 .about>p{
     color: black;
-    text-shadow: 2px 3px 15px #d70f64;
+    text-shadow: 2px 3px 15px green;
+    /* #d70f64 */
 }
 .introcard{
     width: 100%;
