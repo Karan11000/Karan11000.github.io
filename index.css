@@ -87,7 +87,8 @@ img{
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
-    background-color: rgb(230 230 230);
+    /* background-color: rgb(230 230 230); */
+    background-color: wheat;
     border-radius: 30px;
     transition-property: all;
     transition-duration: 2s;
@@ -96,10 +97,16 @@ img{
     /* display: none; */
     /* border: 2px solid red; */
 }
-.introcard:hover{
-      background-color: #1a1717;
-      color: white;
+.icard:hover{
+    transform:scale(1.05);
+      box-shadow: 10px 8px 15px black;
 }
+/* .introcard:hover{
+       background-color: #1a1717;
+      color: white;
+      transform:scale(1.05);
+      box-shadow: 2px 4px 15px black;
+}  */
 .icard{
     display: flex;
     flex-direction: column;
@@ -107,11 +114,13 @@ img{
     align-items:center;
     justify-content: center;
     margin: 12px 25px;
+    border-radius: 25px;
     /* 25 */
     /* border: 2px solid red; */
     /* width: 300px;
     height: 300px; */
     text-align: center;
+    cursor: pointer;
 }
 .icard-img>img{
     width: 240px;
@@ -159,6 +168,9 @@ img{
     border-radius: 25px;
     text-align: center;
 }
+.btn btn-primary{
+    margin-top: 25px;
+}
 .middle{
     margin: 80px 0px;
     display: flex;
@@ -174,8 +186,40 @@ img{
     text-align: justify;
 }
 .mcard-img>img{
-    width: 240px;
-    height:250px;
+    width: 200px;
+    height:200px;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+    text-align: center;
+}
+.mcardtext{
+    text-align: center;
+}
+.mcardp{
+    font-weight: bold;
+}
+.cardh4{
+    transition-property: all;
+    /* transition-delay: 0.4s; */
+    transition-duration: 0.5s;
+}
+.cardh4:hover{
+      font-size: 30px;
+}
+.endcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.endimg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.endimg>img{
+    width: 330px;
+    height:450px;
     display: block;
     margin: auto;
     border-radius: 25px;
