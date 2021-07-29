@@ -77,7 +77,8 @@ img{
     /* #d70f64 */
 }
 .introcard{
-    width: 100%;
+    width: 98%;
+    margin: auto;
     display: flex;
     /* flex-direction: column; */
     justify-content: center;
