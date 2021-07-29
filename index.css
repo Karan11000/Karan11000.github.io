@@ -1,5 +1,6 @@
 body{
     box-sizing: border-box;
+    user-select: none;
 }
 header::before{
     background: url('https://images.unsplash.com/photo-1586816001966-79b736744398?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80')no-repeat center center/cover;
@@ -7,6 +8,7 @@ header::before{
     position: absolute;
     width: 100%;
     left: 0px;
+    top: 0px;
     height: 500px;
     z-index: -1;
     opacity: 0.6;
@@ -27,7 +29,7 @@ img{
     margin-top: 20px;
 }
 #navFoodiz{
-    margin-top: 10px;
+    margin-top: 30px;
 }
 @media (max-width: 332px){
     .navbar{
@@ -35,9 +37,10 @@ img{
         font-size: 1.2rem;
     }
     #navFoodiz{
-        margin-top: 15px;
+        margin-top: 30px;
     }
 }
+
 #intro{
     display: flex;
     /* justify-content: center; */
@@ -45,44 +48,50 @@ img{
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    /* text-align: justify; */
     text-align: center;
     height: 700px;
     /* border: 2px solid green; */
+}
+.about p{
+    text-align: justify;
 }
 .basic-intro{
     font-size: 2rem;
     font-weight: bold;
     color: black;
 }
-#basic-intro{
-    color: black;
+#basic-intro1{
+    color: #1a1949;
     font-size: 1.3rem;
 }
 .about{
     position: absolute;
-    top: 500px;
+    top: 550px;
     color:  #d70f64;
 }
 .about>p{
     font-weight: bold;
     color: black;
-    text-shadow: 2px 3px 15px #e6af19;
+    /* text-shadow: 2px 3px 15px #e6af19; */
     /* #d70f64 */
 }
 .introcard{
     width: 100%;
     display: flex;
     /* flex-direction: column; */
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
     background-color: rgb(230 230 230);
     border-radius: 30px;
     transition-property: all;
-    transition-duration: 4s;
+    transition-duration: 2s;
     transition-delay: 0.1s;
     box-sizing: border-box;
+    /* display: none; */
+    /* border: 2px solid red; */
 }
 .introcard:hover{
       background-color: #1a1717;
@@ -94,14 +103,15 @@ img{
     flex-wrap: wrap;
     align-items:center;
     justify-content: center;
-    margin: 12px 25px;
+    margin: 12px 0px;
+    /* 25 */
     /* border: 2px solid red; */
     /* width: 300px;
     height: 300px; */
     text-align: center;
 }
 .icard-img>img{
-    width: 240px;
+    width: 15.4em;
     height:250px;
     display: block;
     margin: auto;
@@ -118,5 +128,53 @@ img{
 @media (max-width:296px){
     .icardtext{
         font-size: 20px;
-    }
+    }   
+}
+.cardmenu{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.maincard{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px;
+}
+.maincard-img>img{
+    width: 240px;
+    height:250px;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+    text-align: center;
+}
+.middle{
+    margin: 80px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(243, 226, 194);
+}
+.mcard{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: justify;
+}
+.mcard-img>img{
+    width: 240px;
+    height:250px;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+    text-align: center;
 }
