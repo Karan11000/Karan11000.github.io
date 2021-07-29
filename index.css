@@ -53,9 +53,6 @@ img{
     height: 700px;
     /* border: 2px solid green; */
 }
-.about p{
-    text-align: justify;
-}
 .basic-intro{
     font-size: 2rem;
     font-weight: bold;
@@ -71,10 +68,15 @@ img{
     color:  #d70f64;
 }
 .about>p{
+    width: 94%;
+    margin: auto;
     font-weight: bold;
     color: black;
     /* text-shadow: 2px 3px 15px #e6af19; */
     /* #d70f64 */
+}
+.about p{
+    text-align: justify;
 }
 .introcard{
     width: 98%;
