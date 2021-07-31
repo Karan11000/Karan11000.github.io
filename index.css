@@ -20,7 +20,6 @@ header::before{
     font-size: 1.5rem;
     font-weight: bold;
     flex-wrap: wrap;
-    /* border: 2px solid red; */
 }
 img{
     width: 55px;
@@ -43,15 +42,11 @@ img{
 
 #intro{
     display: flex;
-    /* justify-content: center; */
-    
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    /* text-align: justify; */
     text-align: center;
     height: 700px;
-    /* border: 2px solid green; */
 }
 .basic-intro{
     font-size: 2rem;
@@ -73,8 +68,6 @@ img{
     margin: auto;
     font-weight: bold;
     color: black;
-    /* text-shadow: 2px 3px 15px #e6af19; */
-    /* #d70f64 */
 }
 .about p{
     text-align: justify;
@@ -83,31 +76,21 @@ img{
     width: 98%;
     margin: auto;
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
-    /* background-color: rgb(230 230 230); */
     background-color: white;
     border-radius: 30px;
     transition-property: all;
     transition-duration: 2s;
     transition-delay: 0.1s;
     box-sizing: border-box;
-    /* display: none; */
-    /* border: 2px solid red; */
 }
 .icard:hover{
     transform:scale(1.05);
       box-shadow: 10px 8px 15px black;
 }
-/* .introcard:hover{
-       background-color: #1a1717;
-      color: white;
-      transform:scale(1.05);
-      box-shadow: 2px 4px 15px black;
-}  */
 .icard{
     display: flex;
     flex-direction: column;
@@ -116,10 +99,6 @@ img{
     justify-content: center;
     margin: 12px 25px;
     border-radius: 25px;
-    /* 25 */
-    /* border: 2px solid red; */
-    /* width: 300px;
-    height: 300px; */
     text-align: center;
     cursor: pointer;
 }
@@ -128,15 +107,10 @@ img{
     height:250px;
     display: block;
     margin: auto;
-    /* vertical-align: middle; */
     border-radius: 25px;
-    /* max-width: 100%;
-    max-height: 100%; */
-    /* aspect-ratio: auto 240/250; */
 }
 .icardtext{
     font-size: 18px;
-    /* font-weight: bold; */
 }
 @media (max-width:296px){
     .icardtext{
@@ -158,6 +132,7 @@ img{
     padding: 17px;
     position: sticky;
     top: 0px;
+    z-index: 1;
     
 }
 .paisa{
@@ -176,26 +151,22 @@ img{
     border: none;
     background-color:black;
     color: white;
-    /* border: 2px solid green; */
 }
 .topay:hover{
     font-size: 25px;
     background-color: green;
 }
-/* .p{
-    border-radius: px;
-    border: 2px solid black;
-} */
+.p{
+    cursor: pointer;
+}
+.m{
+    cursor: pointer;
+}
 .p:hover{
     color: white;
-    /* border: 2px solid white; */
 }
-/* .m{
-    border: 2px solid black;
-} */
 .m:hover{
     color: white;
-    /* border: 2px solid white; */
 }
 .menu{
     display: flex;
@@ -210,18 +181,18 @@ img{
     align-items: center;
     justify-content: center;
     margin: 25px;
-    /* border-radius: 25px; */
     transition-property: all;
     border: 2px solid red;
     border-radius: 15px;
     background-color: white;
     text-align: center;
     color: black;
-    /* width: 250px;
-    height: 260px; */
+    cursor: pointer;
+    transition-delay: 0.3s;
+    transition-duration: 0.4s;
+    font-family: 'Montserrat', sans-serif;
 }
 .maincard:hover{
-    /* cursor: pointer; */
     transform: scale(1.1);
     box-shadow: 4px 8px 12px white;
     background-color: black;
@@ -229,7 +200,6 @@ img{
     border : 2px solid white;
 }
 .maincard-img{
-    /* border: 2px solid green; */
     padding: 4px;
     
 }
@@ -281,12 +251,10 @@ img{
 }
 .cardh4{
     transition-property: all;
-    /* transition-delay: 0.4s; */
     transition-duration: 0.5s;
 }
 .cardh4:hover{
       font-size: 30px;
-      /* text-shadow: 2px 4px 2px rgb(136, 125, 125); */
 }
 .endcontainer{
     display: flex;
