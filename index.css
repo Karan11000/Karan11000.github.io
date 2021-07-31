@@ -188,8 +188,7 @@ img{
     text-align: center;
     color: black;
     cursor: pointer;
-    transition-delay: 0.3s;
-    transition-duration: 0.4s;
+    transition-duration: 0.9s;
     font-family: 'Montserrat', sans-serif;
 }
 .maincard:hover{
