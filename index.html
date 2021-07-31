@@ -70,25 +70,48 @@
     </div>
     <div class="collapse" id="collapseExample">
         <div class="cardmenu">
+            <div class="pay">
+                <div class="paisa">Your Balance is 
+                <!-- <div><pre>0</pre></div> -->
+                <button id="amtbtn">0</button>
+                <!-- <span>0</span>  -->
+                </div>
+                <button class="topay" onclick="apay()">Pay Now</button>
+            </div>
             <div class="menu">
                 <div class="maincard">
                     <div class="maincard-img"><img src="maincard1.jpg" alt=""></div>
                     <div class="maincardtext">BBQ Chicken Pizza</div>
                     <div class="maprice">Rs 550 per piece</div>
-                    <button class="mbutton">Add to Cart</button>
+                    <button class="mbutton" id="mbtn1" onclick="none('disp1', 'item-1','mbtn1', 550)">Add to Cart</button>
+                    <div id="item-1" style="display: none; flex-wrap: wrap; justify-content: space-evenly; width: 100%; font-size:35px;">
+                        <div id="p1" class="p" onclick="pay('item-1', 'disp1','mbtn1', 1, 550)"><span>+</span></div>
+                        <div class="display" id="disp1">0</div>
+                        <div id="m1" class="m" onclick="pay('item-1', 'disp1','mbtn1',-1, -550)"><span>-</span></div>
+                    </div>
                 </div>
                 <div class="maincard">
                     <div class="maincard-img"><img src="maincard2.jpg" alt=""></div>
                     <div class="maincardtext">FOODIZ's Veggies</div>
-                    <div class="maprice">Rs 550 per piece</div>
-                    <button class="mbutton">Add to Cart</button>
+                    <div class="maprice">Rs 500 per piece</div>
+                    <button class="mbutton" id="mbtn2" onclick="none('disp2', 'item-2','mbtn2', 500)">Add to Cart</button>
+                    <div id="item-2" style="display: none; flex-wrap: wrap; justify-content: space-evenly; width: 100%; font-size:35px;">
+                        <div id="p2" class="p" onclick="pay('item-2', 'disp2','mbtn2', 1, 500)"><span>+</span></div>
+                        <div class="display" id="disp2">0</div>
+                        <div id="m2" class="m" onclick="pay('item-2', 'disp2','mbtn2',-1, -500)"><span>-</span></div>
+                    </div>
                 </div>
                 <div class="maincard">
 
                     <div class="maincard-img"><img src="maincard3.jpg" alt=""></div>
                     <div class="maincardtext">FOODIZ's Burger</div>
-                    <div class="maprice">Rs 550 per piece</div>
-                    <button class="mbutton">Add to Cart</button>
+                    <div class="maprice">Rs 300 per piece</div>
+                    <button class="mbutton" id="mbtn3" onclick="none('disp3', 'item-3','mbtn3', 300)">Add to Cart</button>
+                    <div id="item-3" style="display: none; flex-wrap: wrap; justify-content: space-evenly; width: 100%; font-size:35px;">
+                        <div id="p3" class="p" onclick="pay('item-3', 'disp3','mbtn3', 1, 300)"><span>+</span></div>
+                        <div class="display" id="disp3">0</div>
+                        <div id="m3" class="m" onclick="pay('item-3', 'disp3','mbtn3',-1, -300)"><span>-</span></div>
+                    </div>
                 </div>
                 <div class="maincard">
 
@@ -96,56 +119,91 @@
                         <img src="https://img.etimg.com/photo/msid-79922357,imgsize-1080976/Unprecedentedtimes%3FNotforBiryani!.jpg" alt="">
                     </div>
                     <div class="maincardtext">Royal Laziz Biryani</div>
-                    <div class="maprice">Rs 550 per piece</div>
-                    <button class="mbutton">Add to Cart</button>
+                    <div class="maprice">Rs 800 per piece</div>
+                    <button class="mbutton" id="mbtn4" onclick="none('disp4', 'item-4','mbtn4', 800)">Add to Cart</button>
+                    <div id="item-4" style="display: none; flex-wrap: wrap; justify-content: space-evenly; width: 100%; font-size:35px;">
+                        <div id="p4" class="p" onclick="pay('item-4', 'disp4','mbtn4', 1, 800)"><span>+</span></div>
+                        <div class="display" id="disp4">0</div>
+                        <div id="m4" class="m" onclick="pay('item-4', 'disp4','mbtn4',-1, -800)"><span>-</span></div>
+                    </div>
                 </div>          
                 <div class="maincard">
                     <div class="maincard-img">
                         <img src="https://media.gettyimages.com/photos/ice-cream-composition-on-a-bowl-picture-id157472912?s=612x612" alt="">
                     </div>
                     <div class="maincardtext">Kulfis</div>
-                    <div class="maprice">Rs 550 per piece</div>
-                    <button class="mbutton">Add to Cart</button>
+                    <div class="maprice">Rs 150 per piece</div>
+                    <button class="mbutton" id="mbtn5" onclick="none('disp5', 'item-5','mbtn5', 150)">Add to Cart</button>
+                    <div id="item-5" style="display: none; flex-wrap: wrap; justify-content: space-evenly; width: 100%; font-size:35px;">
+                        <div id="p5" class="p" onclick="pay('item-5', 'disp5','mbtn5', 1, 150)"><span>+</span></div>
+                        <div class="display" id="disp5">0</div>
+                        <div id="m5" class="m" onclick="pay('item-5', 'disp5','mbtn5',-1, -150)"><span>-</span></div>
+                    </div>
                 </div>
                 <div class="maincard">
                     <div class="maincard-img">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFdMED2PJ01R7i9uwZVdjJHSHN0dXZHjxEuw&usqp=CAU" alt="">
                     </div>
                     <div class="maincardtext">Achari Paneer Tika</div>
-                    <div class="maprice">Rs 550 per piece</div>
-                    <button class="mbutton">Add to Cart</button>
+                    <div class="maprice">Rs 350 per piece</div>
+                    <button class="mbutton" id="mbtn6" onclick="none('disp6', 'item-6','mbtn6', 350)">Add to Cart</button>
+                    <div id="item-6" style="display: none; flex-wrap: wrap; justify-content: space-evenly; width: 100%; font-size:35px;">
+                        <div id="p6" class="p" onclick="pay('item-6', 'disp6','mbtn6', 1, 350)"><span>+</span></div>
+                        <div class="display" id="disp6">0</div>
+                        <div id="m6" class="m" onclick="pay('item-6', 'disp6','mbtn6',-1, -350)"><span>-</span></div>
+                    </div>
                 </div>
                 <div class="maincard">
                     <div class="maincard-img">
                         <img src="https://www.mokhli.com/wp-content/uploads/2020/11/lnnyff5yajwkfz8chgxb.png" alt="">
                     </div>
                     <div class="maincardtext">FOODIZ's Panner Special</div>
-                    <div class="maprice">Rs 550 per piece</div>
-                    <button class="mbutton">Add to Cart</button>
+                    <div class="maprice">Rs 700 per piece</div>
+                    <button class="mbutton" id="mbtn7" onclick="none('disp7', 'item-7','mbtn7', 700)">Add to Cart</button>
+                    <div id="item-7" style="display: none; flex-wrap: wrap; justify-content: space-evenly; width: 100%; font-size:35px;">
+                        <div id="p7" class="p" onclick="pay('item-7', 'disp7','mbtn7', 1, 700)"><span>+</span></div>
+                        <div class="display" id="disp7">0</div>
+                        <div id="m7" class="m" onclick="pay('item-7', 'disp7','mbtn7',-1, -700)"><span>-</span></div>
+                    </div>
                 </div>
                 <div class="maincard">
                     <div class="maincard-img">
                         <img src="https://images.immediate.co.uk/production/volatile/sites/30/2021/02/butter-chicken-ac2ff98.jpg?quality=90&resize=440,400" alt="">
                     </div>
                     <div class="maincardtext">Classic Butter Chicken</div>
-                    <div class="maprice">Rs 550 per piece</div>
-                    <button class="mbutton">Add to Cart</button>
+                    <div class="maprice">Rs 950 per piece</div>
+                    <button class="mbutton" id="mbtn8" onclick="none('disp8', 'item-8','mbtn8', 950)">Add to Cart</button>
+                    <div id="item-8" style="display: none; flex-wrap: wrap; justify-content: space-evenly; width: 100%; font-size:35px;">
+                        <div id="p8" class="p" onclick="pay('item-8', 'disp8','mbtn8', 1, 950)"><span>+</span></div>
+                        <div class="display" id="disp8">0</div>
+                        <div id="m8" class="m" onclick="pay('item-8', 'disp8','mbtn8',-1, -950)"><span>-</span></div>
+                    </div>
                 </div>
                 <div class="maincard">
                     <div class="maincard-img">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7OH786RD4zbSnvZ0UAO1_3SE9mOFWI1aEXQ&usqp=CAU" alt="">
                     </div>
                     <div class="maincardtext">Seekh Kebab</div>
-                    <div class="maprice">Rs 550 per piece</div>
-                    <button class="mbutton">Add to Cart</button>
+                    <div class="maprice">Rs 450 per piece</div>
+                    <button class="mbutton" id="mbtn9" onclick="none('disp9', 'item-9','mbtn9', 450)">Add to Cart</button>
+                    <div id="item-9" style="display: none; flex-wrap: wrap; justify-content: space-evenly; width: 100%; font-size:35px;">
+                        <div id="p9" class="p" onclick="pay('item-9', 'disp9','mbtn9', 1, 450)"><span>+</span></div>
+                        <div class="display" id="disp9">0</div>
+                        <div id="m9" class="m" onclick="pay('item-9', 'disp9','mbtn9',-1, -450)"><span>-</span></div>
+                    </div>
                 </div>
                 <div class="maincard">
                     <div class="maincard-img">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8rs1oOcoOWJP-IjXlSBRyzEwEmN13HFBmkA&usqp=CAU" alt="">
                     </div>
                     <div class="maincardtext">Veg Kabab Parantha</div>
-                    <div class="maprice">Rs 550 per piece</div>
-                    <button class="mbutton">Add to Cart</button>
+                    <div class="maprice">Rs 400 per piece</div>
+                    <button class="mbutton" id="mbtn10" onclick="none('disp10', 'item-10','mbtn10', 400)">Add to Cart</button>
+                    <div id="item-10" style="display: none; flex-wrap: wrap; justify-content: space-evenly; width: 100%; font-size:35px;">
+                        <div id="p10" class="p" onclick="pay('item-10', 'disp10','mbtn10', 1, 400)"><span>+</span></div>
+                        <div class="display" id="disp10">0</div>
+                        <div id="m10" class="m" onclick="pay('item-10', 'disp10','mbtn10',-1, -400)"><span>-</span></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -180,9 +238,9 @@
         </div>
     </div>
     <div class="endcontainer">
-            <div class="endtext">
-
-            </div>
+            <!-- <div class="endtext" style="font-size: 30px; color: rgb(49, 52, 54);">
+           Now You can Track your order with the latest features of our App
+            </div> -->
             <div class="endimg">
                 <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_768,h_978/iPhone_wgconp_j0d1fn"
                     alt="">
